@@ -3,9 +3,6 @@ body {
     color: aliceblue;
   }
 
-  a:visited{
-    color:rgb(129, 230, 255)
-  }
   a{
     text-decoration: none;
   }
@@ -13,7 +10,8 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden;    
+    background-color: rgb(1, 2, 61);
   }
 
   li.header{
@@ -22,8 +20,10 @@ body {
 
   li.header a{
     display: block;
-    padding: 8px;
-    background-color: rgb(1, 2, 48)
+    text-align: center;
+    padding: 14px 16px;
+    background-color: rgb(1, 2, 61);
+    text-decoration: none;
   }
 
   li.header a:hover{
@@ -32,4 +32,11 @@ body {
 
   li.header a.active{
     background-color: #0045c5;
+  }
+  a:visited{
+    color:rgb(129, 230, 255)
+  }
+
+  @media screen and (max-width: 600px) {
+    ul.header li {float: none;}
   }
